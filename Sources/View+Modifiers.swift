@@ -10,4 +10,3 @@ extension View {
     modifier(ApplyViewModifiers(modifiers))
   }
 }
-
