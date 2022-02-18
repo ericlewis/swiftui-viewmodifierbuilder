@@ -12,14 +12,21 @@ import SwiftUI
 import ViewModifierBuilder
 
 struct ContentView: View {
+  @State
+  private var toggler = false
+  
   var body: some View {
     VStack {
-      Text("Hello World.")
+      Button("Toggle Modifier") {
+        toggler.toggle()
+      }
     }
     .modifiers {
       CustomModifier1()
       CustomModifier2()
-      CustomModifier3()
+      if toggler {
+        CustomModifier3()
+      }
     }
   }
 }
