@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "ViewModifierBuilder",
+  name: "swiftui-viewmodifierbuilder",
   platforms: [
     .iOS(.v13),
     .macOS(.v10_15),
