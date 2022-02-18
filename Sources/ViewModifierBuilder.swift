@@ -1,17 +1,5 @@
 import SwiftUI
 
-public struct V: ViewModifier {
-  public func body(content: Content) -> some View {
-    content
-  }
-}
-
-public struct V2: ViewModifier {
-  public func body(content: Content) -> some View {
-    content
-  }
-}
-
 /// A custom parameter attribute that constructs modifiers from closures.
 ///
 /// You typically use ``ViewModiferBuilder`` as a parameter attribute for child
